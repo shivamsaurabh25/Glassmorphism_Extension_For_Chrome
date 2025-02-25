@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Glassmorphic Chrome Theme",
+    "version": "1.0",
+    "description": "A stylish new tab with glassmorphism and a tic-tac-toe game.",
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    },
+    "permissions": []
+  }  

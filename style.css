@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-size: cover;
+  background-position: center;
+  transition: background 1s ease-in-out;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100vw;
+    min-height: 80vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > * {
+    width: 100%;
+}
+
+#clock {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#ticTacToe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 180px;
+    margin: auto;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }  
+
+#searchBox {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#searchBox::placeholder {
+  color: white;
+}
+
+.music-container {
+  margin-top: 20px;
+}
+
+#musicSearch {
+    background: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  outline: none;
+  text-align: center;
+}
+
+#musicSearch::placeholder {
+    color: white;
+}
+
+#results {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.result-item {
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.result-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+      width: 80vw;
+      min-height: 80vh;
+      padding: 15px;
+    }
+  
+    #clock {
+      font-size: 2.5rem;
+    }
+  
+    .cell {
+      width: 50px;
+      height: 50px;
+      font-size: 1.8rem;
+    }
+  
+    iframe {
+      height: 150px;
+    }
+  }
