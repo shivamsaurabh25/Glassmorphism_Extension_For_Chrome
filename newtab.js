@@ -76,7 +76,7 @@ function checkWinner() {
 createBoard();
   
   // YouTube API Music Search
-  const API_KEY = "AIzaSyDWCQSmLC-np3G884FTf3KTqAQtLUInYV4";
+  const API_KEY = "YOUR_YOUTUBE_API_KEY";
   const searchInput = document.getElementById("musicSearch");
   const resultsList = document.getElementById("results");
   const player = document.getElementById("player");
